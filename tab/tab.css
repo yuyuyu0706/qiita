@@ -33,7 +33,7 @@ input[name="tab_item"] {
   display: none;
 }
 
-/*タブ切り替えの中身のスタイル*/
+/*コンテンツのスタイル*/
 .tab_content {
   display: none;
   padding: 40px 0px 0px 40px;
@@ -41,14 +41,14 @@ input[name="tab_item"] {
   overflow: hidden; /*boxからはみ出た部分は非表示にする*/
 }
 
-/*選択されているタブ(ラジオボタン)のコンテンツのみを表示*/
+/*コンテンツの表示制御(ボタンのチェック有無)*/
 #tab1:checked ~ #tab1_content,
 #tab2:checked ~ #tab2_content,
 #tab3:checked ~ #tab3_content {
   display: block;
 }
 
-/*選択されているタブのスタイルを変える*/
+/*選択されたタブのスタイルを変える*/
 .tabs input:checked + .tab_item {
   background-color: #428bca;
   color: #fff;
