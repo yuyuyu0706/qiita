@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flex</title>
+    <style type="text/css">
+      .header{
+        background:#fff;
+        background-color: rgba(255,255,255,0.7);
+        box-shadow: 0px 2px 8px rgba(30,30,80,0.3);
+        top: 0px;
+        left: 0px;
+        position:fixed; /*headerを固定化する*/
+        width:100%;     /*headerとするため100%を指定*/
+        z-index:24;     /*3次元軸浮かすために必要*/
+      }
+      .head_content{
+        padding: 0px 0px 0px 40px;
+      }
+      .header-padding{
+        padding: 40px 0px;
+      }
+      .content{
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="head_content">
+        <h2>ヘッダー</h2>
+      </div>
+    </header>
+    <div class="header-padding">
+    </div>
+    <div class="content">
+      メインコンテンツ
+    </div>
+    <div class="content">
+      メインコンテンツ2
+    </div>
+    <div class="content">
+      メインコンテンツ3
+    </div>
+  </body>
+</html>
