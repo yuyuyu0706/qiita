@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <style>
+    main {
+      margin: 2em;
+    }
+
+    /* メニュー全体 */
+    .menu {
+      width: 20em;
+    }
+
+    /* チェックボックス */
+    .menu input {
+        display: none;
+    }
+
+    /* 開いた状態のリスト */
+    .menu input:checked + ul {
+        line-height: 1.5;
+        padding: 1em;
+    }
+
+    /* 閉じた状態のリスト */
+    .menu ul {
+        overflow: hidden;
+        line-height: 0;
+	padding: 0 1em;
+        transition: 0.2s;
+
+        /* 開閉によらず共通の設定 */
+        background: #EEE;
+        list-style: none;
+        margin: 0;
+    }
+
+    /* 親メニューの装飾 */
+    .menu label {
+        display: block;
+        margin: 0.1em;
+        padding: 0.5em;
+	color: #FFFFFF;
+        background: #0000FF;
+        cursor: pointer;
+    }
+
+    .menu label:hover {
+        background: #87ceeb;
+    }
+  </style>
+  <title>CSS によるアコーディオン デモページ</title>
+</head>
+<body>
+<main>
+
+<div class="menu">
+  <label for="list1">メインメニュー1 Click</label>
+  <input type="checkbox" id="list1">
+  <ul>
+    <li>リスト1-1
+    <li>リスト1-2
+    <li>リスト1-3
+  </ul>
+
+  <label for="list2">メインメニュー2 Click</label>
+  <input type="checkbox" id="list2">
+  <ul>
+    <li>リスト2-1
+    <li>リスト2-2
+    <li>リスト2-3
+  </ul>
+</div>
+
+</main>
+</body>
+</html>
